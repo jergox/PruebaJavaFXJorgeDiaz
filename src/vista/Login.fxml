@@ -41,7 +41,6 @@
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Your Own Account" wrappingWidth="192.03515625" />
                               <HBox prefHeight="100.0" prefWidth="200.0" spacing="13.0" GridPane.rowIndex="1">
                                  <children>
                                     <JFXButton style="-fx-background-color: #fff; -fx-background-radius: 10px;" text="ABOUT US" textFill="#795548" />
@@ -53,12 +52,19 @@
                               </HBox>
                            </children>
                            <BorderPane.margin>
-                              <Insets left="60.0" />
+                              <Insets bottom="40.0" left="60.0" />
                            </BorderPane.margin>
                         </GridPane>
-                     </bottom></BorderPane>
+                     </bottom>
+                     <center>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Your Own Account" wrappingWidth="192.03515625" BorderPane.alignment="BOTTOM_LEFT">
+                           <BorderPane.margin>
+                              <Insets left="60.0" />
+                           </BorderPane.margin>
+                        </Text>
+                     </center></BorderPane>
                </children></AnchorPane>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="298.0" prefWidth="393.0" styleClass="background">
+    <AnchorPane maxWidth="670.0" minHeight="0.0" minWidth="410.0" prefHeight="298.0" prefWidth="393.0" styleClass="background">
                <children>
                   <Pane prefHeight="598.0" prefWidth="495.0">
                      <children>
