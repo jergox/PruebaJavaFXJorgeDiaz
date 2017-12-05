@@ -5,6 +5,7 @@
 <?import com.jfoenix.controls.JFXTextField?>
 <?import com.jfoenix.controls.JFXToggleButton?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -40,17 +41,20 @@
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="7.0" GridPane.rowIndex="1">
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Your Own Account" wrappingWidth="192.03515625" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="13.0" GridPane.rowIndex="1">
                                  <children>
-                                    <JFXButton text="ABOUT US" />
-                                    <JFXButton />
+                                    <JFXButton style="-fx-background-color: #fff; -fx-background-radius: 10px;" text="ABOUT US" textFill="#795548" />
+                                    <JFXButton style="-fx-border-color: #fff; -fx-border-radius: 10px;" text="SIGNIN" textFill="WHITE" />
                                  </children>
                                  <opaqueInsets>
                                     <Insets right="1.0" />
                                  </opaqueInsets>
                               </HBox>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Create Your Own Account" />
                            </children>
+                           <BorderPane.margin>
+                              <Insets left="60.0" />
+                           </BorderPane.margin>
                         </GridPane>
                      </bottom></BorderPane>
                </children></AnchorPane>
@@ -58,16 +62,17 @@
                <children>
                   <Pane prefHeight="598.0" prefWidth="495.0">
                      <children>
-                        <JFXTextField labelFloat="true" layoutX="175.0" layoutY="100.0" promptText="FIRST NAME" />
-                        <JFXTextField labelFloat="true" layoutX="175.0" layoutY="200.0" promptText="LAST NAME" />
-                        <JFXPasswordField labelFloat="true" layoutX="175.0" layoutY="300.0" promptText="PASSWORD" />
-                        <JFXPasswordField labelFloat="true" layoutX="175.0" layoutY="400.0" promptText="REPEAT PASSWORD" />
+                        <JFXTextField focusColor="#ff4081" labelFloat="true" layoutX="175.0" layoutY="100.0" promptText="FIRST NAME" />
+                        <JFXTextField focusColor="#ff4081" labelFloat="true" layoutX="175.0" layoutY="200.0" promptText="LAST NAME" />
+                        <JFXPasswordField focusColor="#ff4081" labelFloat="true" layoutX="175.0" layoutY="300.0" promptText="PASSWORD" />
+                        <JFXPasswordField focusColor="#ff4081" labelFloat="true" layoutX="175.0" layoutY="400.0" promptText="REPEAT PASSWORD" />
                         <HBox layoutX="125.0" layoutY="500.0" prefHeight="59.0" prefWidth="345.0" spacing="3.0">
                            <children>
-                              <JFXToggleButton prefHeight="58.0" prefWidth="154.0" text="UNDER 18 ?" />
-                              <JFXButton prefHeight="63.0" prefWidth="122.0" />
+                              <JFXToggleButton prefHeight="58.0" prefWidth="154.0" text="UNDER 18 ?" toggleColor="#ff4081" />
+                              <JFXButton prefHeight="63.0" prefWidth="122.0" ripplerFill="#ff4081" style="-fx-background-color: #fff; -fx-border-radius: 10px; -fx-border-color: #795548;" text="GET STARTED" textFill="#795548" />
                            </children>
                         </HBox>
+                        <Label alignment="CENTER" layoutX="230.0" layoutY="32.0" prefHeight="58.0" prefWidth="61.0" style="-fx-background-color: #fff; -fx-background-radius: 50px;" text="M" textFill="#ff4081" />
                      </children>
                   </Pane>
                </children></AnchorPane>

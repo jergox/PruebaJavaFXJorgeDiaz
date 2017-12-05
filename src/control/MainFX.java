@@ -8,7 +8,13 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 
-
+/**
+ * 
+ * @author Jorge Diaz
+ * @see control.ControlFX
+ * @version 1.0.4
+ *
+ */
 public class MainFX extends Application {
 	
 	Stage stage;
@@ -37,6 +43,8 @@ public class MainFX extends Application {
 
         	FXMLLoader loader=new FXMLLoader(getClass().getResource("../vista/Login.fxml"));
             AnchorPane pane=loader.load();
+            ControlFX controller=loader.getController();
+            controller.main(stage,this);
             Scene scene=new Scene(pane);
             stage.setScene(scene);
             stage.show();
